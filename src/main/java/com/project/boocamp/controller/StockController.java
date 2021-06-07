@@ -18,8 +18,6 @@ public class StockController {
     @Autowired
     private StockService service;
 
-
-
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<StockDTO> save(@Valid @RequestBody StockDTO dto){
 
